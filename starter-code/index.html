@@ -3,9 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="styles.css">
   <title>Frontend Mentor | Meet landing page</title>
 </head>
 
@@ -13,52 +15,51 @@
 <div class="landing-page">
   <header>
     <img src="/starter-code/assets/logo.svg" alt="meet Logo">
-    <h1>
-      meet
-    </h1>
   </header>
 
   <div class="header-container">
+  <div class="header-content">
     
     <div class="left-header-gallery">
       <img class="gallery-left" src="assets/desktop/image-hero-left.png">
     </div>
     
-    <div class="header-content">
-      <h2>Group Chat for Everyone</h2>
-      <h3>Meet makes it easy to connect with others face-to-face virtually and collaborate across any device.</h3>
-    
-      <button class='download'>Download v1.3</button>
-      <button class='info'>What is it?</button>
-    </div>
-    
     <div class="right-header-gallery">
       <img class="gallery-right" src="assets/desktop/image-hero-right.png">
     </div>
+    
+    <div class="header-info">
+      <h2>Group Chat for Everyone</h2>
+      <h3>Meet makes it easy to connect with others face-to-face virtually and collaborate across any device.</h3>
+    
+      <button class='download'>Download <span class="version">v1.3</span></button>
+      <button class='info'>What is it?</button>
+    </div>
   
   </div>
-  
-  <span class='index-01'>01</span>
-  
+  </div>
+
+  <div class="info-container">  
   <div class="product-info">
-  
+  <span class='index-01'>01</span>
   <div class="photo-gallery">
     <img src="/starter-code/assets/desktop/image-woman-in-videocall.jpg" class="gallery-pic-1">
     <img src="/starter-code/assets/desktop/image-women-videochatting.jpg" class="gallery-pic-2">
     <img src="/starter-code/assets/desktop/image-men-in-meeting.jpg" class="gallery-pic-3">
     <img src="/starter-code/assets/desktop/image-man-texting.jpg" class="gallery-pic-4">
   </div>
+  <div class="built-info">
   <p class="built">Built for modern use</p>
   <h2>Smarter meetings, all in one place</h2>
-
   <h3>Send messages, share files, show your screen, and record your meetings — all in one 
   workspace. Control who can join with invite-only team access, data encryption, and data export.</h3>
-  
   </div>
   
-  <span class="index-02">02</span>
+  </div>
+  </div>
   
   <footer>
+    <span class="index-02">02</span>
     <p class="footer-text">Experience more together</p>
     <p class="footer-description">Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.</p>
 

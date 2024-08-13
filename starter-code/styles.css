@@ -1,0 +1,171 @@
+header {
+    display: flex;
+    padding: var(--font-size-tablet-text-preset-1, 48px) var(--spacing-1000, 80px) 0px var(--spacing-1000, 80px);
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: var(--spacing-100, 8px);
+    align-self: stretch;
+}
+
+.header-container {
+    display: flex;
+    padding: var(--spacing-800, 64px) var(--spacing-400, 32px) var(--spacing-400, 32px) var(--spacing-400, 32px);
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-100, 8px);
+    align-self: stretch;
+    background: var(--color-white, #FAFAFA);
+}
+
+.header-content {
+    display: flex;
+    max-width: 305px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--font-size-tablet-text-preset-1, 48px);
+    align-self: stretch;
+}
+
+.header-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-300, 4px);
+    align-self: stretch;
+}
+
+h2 {
+    color: var(--color-slate-900, #28283D);
+    text-align: center;
+    font-feature-settings: 'liga' off, 'clig' off;
+    
+    /* mobile/text-preset-1 */
+    font-family: "Red Hat Display";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 110%; /* 44px */
+    align-self: stretch;
+}
+
+h3 {
+    color: var(--color-slate-600, #87879D);
+    text-align: center;
+    font-feature-settings: 'liga' off, 'clig' off;
+    
+    /* tablet/text-preset-4 */
+    font-family: "Red Hat Display";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 24px */
+    align-self: stretch;
+}
+
+.download {
+    display: flex;
+    padding: var(--spacing-200, 16px) var(--spacing-500, 40px);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-100, 8px);
+    border-radius: 29px;
+    background: var(--color-cyan-600, #4D96A9);
+    color: var(--color-white, #FAFAFA);
+    font-feature-settings: 'liga' off, 'clig' off;
+    
+    /* desktop/text-preset-5 */
+    font-family: "Red Hat Display";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 150%; /* 24px */
+    border: none;
+    cursor: pointer;
+}
+
+.info {
+    display: flex;
+    padding: var(--spacing-200, 16px) var(--spacing-500, 40px);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-100, 8px);
+    border-radius: 29px;
+    background: var(--color-purple-600, #855FB1);
+    color: var(--color-white, #FAFAFA);
+    font-feature-settings: 'liga' off, 'clig' off;
+    
+    /* desktop/text-preset-5 */
+    font-family: "Red Hat Display";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 150%; /* 24px */    
+    border: none;
+    cursor: pointer;
+}
+
+.version {
+    color: var(--color-cyan-300, #8FE3F9);
+    font-feature-settings: 'liga' off, 'clig' off;
+    
+    /* desktop/text-preset-5 */
+    font-family: "Red Hat Display";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 150%; /* 24px */
+}
+
+.info-container {
+    display: flex;
+    padding: var(--spacing-400, 32px) var(--spacing-400, 32px) var(--spacing-800, 64px) var(--spacing-400, 32px);
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-800, 64px);
+    align-self: stretch;
+    background: var(--color-white, #FAFAFA);
+}
+
+.product-info {
+    display: flex;
+    max-width: 1120px;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-800, 64px);
+    align-self: stretch;
+}
+
+.photo-gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-200, 16px);
+    align-self: stretch;
+}
+
+.built-info {
+    display: flex;
+    max-width: 504px;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-400, 32px);
+    align-self: stretch;
+}
+
+.built {
+    color: var(--color-cyan-600, #4D96A9);
+    text-align: center;
+    font-feature-settings: 'liga' off, 'clig' off;
+    
+    /* mobile/text-preset-3 */
+    font-family: "Red Hat Display";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 110%; /* 13.2px */
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    align-self: stretch;
+}
