@@ -25,6 +25,16 @@ header {
     align-items: center;
     gap: 32px;
     align-self: stretch;
+    margin: 0 auto;
+}
+
+.section-two {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -32px;
+    z-index: 2;
 }
 
 .hero-info {
@@ -148,12 +158,13 @@ h3 {
 
 .info-container {
     display: flex;
-    padding: var(--spacing-400, 32px) var(--spacing-400, 32px) var(--spacing-800, 64px) var(--spacing-400, 32px);
+    max-width: 1120px;
     flex-direction: column;
     align-items: center;
-    gap: var(--spacing-800, 64px);
+    gap: 0;
     align-self: stretch;
-    background: var(--color-white, #FAFAFA);
+    margin: 0 auto;
+    padding: var(--spacing-400, 32px) var(--spacing-400, 32px) var(--spacing-800, 64px) var(--spacing-400, 32px);
 }
 
 .product-info {
@@ -161,7 +172,7 @@ h3 {
     max-width: 1120px;
     flex-direction: column;
     align-items: center;
-    gap: var(--spacing-800, 64px);
+    gap: none;
     align-self: stretch;
 }
 
@@ -201,12 +212,17 @@ h3 {
     line-height: 150%; /* 24px */
 }
 
-.photo-gallery {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: var(--spacing-200, 16px);
-    align-self: stretch;
+.photo-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas de tamanhos iguais */
+    gap: 10px; /* Espaçamento entre as imagens */
+    margin-top: 64px;
+    margin-bottom: 64px;
+}
+
+.photo-container img {
+    width: 100%; /* As imagens ocupam toda a largura da célula */
+    border-radius: 10px; /* Bordas arredondadas */
 }
 
 .built-info {
@@ -214,7 +230,6 @@ h3 {
     max-width: 504px;
     flex-direction: column;
     align-items: center;
-    gap: var(--spacing-400, 32px);
     align-self: stretch;
 }
 
@@ -231,5 +246,86 @@ h3 {
     line-height: 110%; /* 13.2px */
     letter-spacing: 4px;
     text-transform: uppercase;
+    align-self: stretch;
+    margin: 0;
+    padding: 0;
+}
+
+.built-info > h2 {
+    margin-top: 16px;
+    margin-bottom: 32px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    align-self: stretch;
+}
+
+.footer-hero {
+    position: relative;
+    display: flex;
+    padding: var(--spacing-800, 64px) var(--spacing-400, 32px);
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-800, 64px);
+    align-self: stretch;
+    background: url(https://github.com/jpcardozx/first-landing-page/blob/main/starter-code/assets/mobile/image-footer.jpg?raw=true) lightgray 50% / cover no-repeat;
+    background-size: cover;
+    min-height: auto;
+}
+
+.footer-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(77, 150, 168, 0.9); /* Ajuste a cor e opacidade conforme necessário */
+    z-index: 1;
+}
+
+.footer-content {
+    position: relative;
+    display: flex;
+    max-width: 320px;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    align-self: stretch;
+    z-index: 2;
+    margin: 0 auto;
+}
+
+.footer-text {
+    color: var(--color-white, #FAFAFA);
+    text-align: center;
+    font-feature-settings: 'liga' off, 'clig' off;
+    
+    /* mobile/text-preset-2 */
+    font-family: "Red Hat Display";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 110%; /* 35.2px */
+    align-self: stretch;
+    margin: 0;
+}
+
+.footer-description {
+    color: var(--color-white, #FAFAFA);
+    text-align: center;
+    font-feature-settings: 'liga' off, 'clig' off;
+    margin: 0;
+    /* tablet/text-preset-4 */
+    font-family: "Red Hat Display";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 24px */
     align-self: stretch;
 }
