@@ -514,5 +514,15 @@ footer {
             width: 280px;
         }
 
+        .download:hover {
+            background-color: #71C0D4;
+            cursor: pointer;
+        }
+
+        .info:hover, .download-footer:hover {
+            background-color: #B18BDD;
+            cursor: pointer;
+        }
+
     }
     
